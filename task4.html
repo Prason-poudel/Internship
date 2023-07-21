@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 task</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        body{
+            margin: 0;
+        }
+
+        .header{
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .topnav{
+            overflow:hidden;
+            background-color: rgb(77, 190, 122);
+        }
+
+        .topnav a{
+            float: left;
+            display: block;
+            font-size: large;
+            color: #1d1d1f;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover{
+            background-color: blue;
+            color:black;
+        }
+
+        .column{
+            float: left;
+            padding: 10px;
+        }
+
+        .column.side{
+            width:15%;
+            font-size: large;
+        }
+
+        .column.middle{
+            width:70%;
+            font-size: large;
+            margin-right: 20px;
+        }
+
+        .row::after{
+            content: "";
+            display: table;
+            clear:both;
+        }
+
+        @media screen and (max-width:600px){
+            .column.side,.column.middle{
+                width: 100%;
+            }
+
+        }
+            
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1> Prason Poudel</h1>
+        <p> Final year undergraduate pursuing Btech degree in computer science and Engineering</p>
+    </div>
+    <div class="topnav">
+        <a href="task1.html" target="_blank">About</a>
+        <a href="#">Education</a>
+        <a href="#">skills</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="row">
+        <div class="column side">
+            <h2> Progress </h2>
+            <a href="task1.html" target="_blank">DAY 1 Task</a><br><br>
+            <a href="task2.html" target="_blank">DAY 2 Task</a><br><br>
+            <a href="task3.html" target="_blank">DAY 3 Task</a><br><br>
+            <a href="task4.html" target="_blank">DAY 4 Task</a><br><br>
+            <a href="task5.html" target="_blank">DAY 5 Task</a><br><br>
+        </div>
+        <div class="column middle">
+            <h2>Main Content</h2>
+            <P>Hello, i'm Prason Poudel from butwal,Nepal and currently pursuing my Btech degree in CSE from vellore institute of technology, Vellore,India.
+                Currently i am doing an internship programme at Ambition Guru, Kamladi,Kathmandu as a full stack developer intern </P>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam velit fugiat, cupiditate quaerat, incidunt beatae aspernatur 
+                consequatur eum mollitia voluptatum repellat laudantium a. Odit modi quia eaque delectus optio odio!</p>
+        </div>
+        <div class="column side">
+            <h2>skills</h2>
+            <p><ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>php</li>
+                <li>MySql</li>
+                <li>Flask</li>
+                <li>Docker</li>
+            </ul></p>
+        </div>
+    </div>
+</body>
+</html>
