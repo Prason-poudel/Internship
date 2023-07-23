@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day10 Task</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Cambria;
+            margin: 0;
+        }
+        .header{
+            text-align: center;
+            padding: 40px;
+            background-color: rgb(3, 36, 63);
+            color: rgb(228, 224, 222);
+            font-size: large;
+        }
+        .navbar{
+            display: flex;
+            flex-direction: row;
+            background-color:rgb(241, 214, 214);
+            color:  rgb(24, 24, 27);
+            text-align: center;
+            justify-content: flex-start;
+        }
+        .navbar a{
+            color: black;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-size: large;
+            font-style: oblique;
+        }
+        .navbar a:hover{
+            background-color: black;
+            color: aqua;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .side{
+            flex: 30%;
+            background-color: rgb(187, 215, 216);
+            padding: 30px;
+        }
+
+        .main{
+            flex: 70%;
+            background-color: rgb(255, 255, 254);
+            padding: 20px;
+        }
+
+        .footer{
+            display: flex;
+            flex: 100%;
+            background-color: rgb(127, 133, 77);
+            color:black;
+            padding: 0%;
+            justify-content: center;
+        }
+        @media screen and (max-width: 600px){
+            .row{
+                flex-direction: column;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>PRASON POUDEL</h2>
+        <p>Final Year Undergraduate pursuing B.Tech degree in CSE From VIT Vellore </p>
+        <a href="https://www.linkedin.com/in/prason-poudel/" target="_blank"><img src="linkedin.png" style="height: 30px;width: 30px;"></a>
+        <a href="https://github.com/Prason-poudel" target="_blank"><img src="github.png" style="height: 30px;width: 30px;margin-left: 20px;"></a>
+        <a href="https://www.youtube.com/@prasonpoudel6948/videos" target="_blank"><img src="youtube.png" style="height: 30px;width: 30px;margin-left: 20px;"></a>
+    </div>
+    <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Education Details</a>
+            <a href="#project1">Projects</a>
+            <a href="contact.html" target="_blank">Contact</a>
+           
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2>ABOUT  ME</h2>
+                <img src="self.png" style="height:300px;width: 350px;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, mollitia neque ipsa minus exercitationem illum,
+                 unde accusamus repudiandae maxime maiores quod! Tempore consequuntur vero dolorum dicta aliquid impedit quam facere?</p>
+            
+            <h3>SKILLS</h3>
+            <p><ul style="font-size: large;">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>Php</li>
+                <li>Flask</li>
+                <li>MySql</li>
+                <li>Vue.js</li>
+            </ul></p>
+        </div>
+        <div class="main">
+            <h2><u>EDUCATION DETAILS</u></h2>
+            <h4>B.Tech in Computer science and engineering.<br><i style="margin-left: 30px;">- Vellore Institute of Technology, Vellore,India</i></h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum tempora quod, rerum mollitia at voluptate 
+                accusantium possimus rem, ab cupiditate libero magnam incidunt sapiente inventore reprehenderit sunt quasi architecto pariatur.</p>
+                
+            <h4>HIGH SCHOOL<br><i style="margin-left: 30px;">- Uniglobe college,Kamladi,Kathmandu</i></h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum tempora quod, rerum mollitia at voluptate 
+                accusantium possimus rem, ab cupiditate libero magnam incidunt sapiente inventore reprehenderit sunt quasi architecto pariatur.</p>
+                
+            <h4>SCHOOL<br><i style="margin-left: 30px;">- New Environment Higher Secondary school,Butwal,Nepal</i></h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum tempora quod, rerum mollitia at voluptate 
+                accusantium possimus rem, ab cupiditate libero magnam incidunt sapiente inventore reprehenderit sunt quasi architecto pariatur.</p><br>
+
+            <h2 id="project1"><u>PROJECT</u></h2>
+            <P><h4>Customandu - a place to buy and sell custom products</h4>- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui consectetur delectus hic minima voluptatem tempore atque quae sed quo 
+                ratione. Sed eos repellendus fugiat neque qui hic ducimus quidem impedit?</P>
+            <p><h4>Smart attendance management system with anti spoofing</h4>-Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad rerum explicabo excepturi vel. Debitis cumque porro suscipit dolorem 
+                labore quasi eius libero, quibusdam possimus assumenda molestias perferendis nulla commodi facilis.</p><br>
+
+            <h2><u>WORK EXPERIENCE</u></h2>
+            <h4>SDE Intern<br><i>- Ambition Guru,Kamladi</i></h4>
+            <p>July,2023 - present</p>
+        </div>
+        <div class="footer">
+            <h3>Developed by Prason Poudel, Ambition Guru, July 2023</h2>
+        </div>
+    </div>
+    
+</body>
+</html>
