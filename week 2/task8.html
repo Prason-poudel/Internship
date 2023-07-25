@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<h2>>, initial-scale=1.0">
+    <title>Day8 Task</title>
+</head>
+<script>
+    function validateForm(){
+        let x = document.forms["form1"]["fname"].value;
+        if (x == ""){
+            alert("name should be entered");
+            return false;
+        }
+        let y = document.forms["form1"]["email"].value;
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if (!y.match(mailformat)){
+            alert("invalid email address")
+        }
+    }
+
+    function upperCase(){
+        const x = document.getElementById("fname");
+        x.value = x.value.toUpperCase();
+        const y = document.getElementById("email");
+        y.value = y.value.toLowerCase();
+    }
+
+    function style1(){
+        const z = document.getElementById("demo");
+        z.innerHTML = "Text changed" ;
+        const a = document.getElementsByTagName("P")[1].innerHTML= "changed using TagName";
+
+    }
+
+</script>
+<body>
+    <h2>DOM Manipulation</h2>
+    <form name="form1" action="#" onsubmit="return validateForm()" onchange="upperCase()" method="get">
+        Name:<input type="text" id="fname" name="fname"><br><br>
+        Email:<input type="text" id="email" name="email"><br><br>
+        <input type="submit" value="submit"><br>
+
+    </form>
+    <p id="demo">Need to change the text</p>
+    <p> change using getElementsByTagName </p>
+
+    <input type="button" onclick="style1()" value="change text" style="color: rgb(36, 18, 126);font-size: large;"> 
+</body>
+</html>
